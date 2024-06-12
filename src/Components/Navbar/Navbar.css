@@ -1,0 +1,286 @@
+/* Navbar.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    padding: 10px 20px; /* Add padding to the nav */
+}
+
+ul {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    list-style: none; /* Remove default list style */
+}
+
+.img {
+    margin-right: auto;
+    width:160px; /* Push the logo to the left */
+}
+
+.elem {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+ul p {
+    margin: 0 20px; /* Add margin to the paragraphs */
+    color: black;
+}
+
+.search {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.search input {
+    font-size: 15px;
+    padding: 10px 15px; /* Adjust padding */
+    color: black;
+    border: none;
+    outline: none;
+    width: 200px; /* Adjust width */
+}
+
+.auth {
+    margin-left: auto; /* Push the authentication buttons to the right */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+.adm button{
+  color: rgb(39, 83, 170);
+  border: 2px solid rgb(39, 83, 170); /* Update border */
+  padding: 8px 16px; /* Adjust padding */
+  border-radius: 2px;
+}
+.btn1 {
+    color: rgb(39, 83, 170);
+    border: 2px solid rgb(39, 83, 170); /* Update border */
+    padding: 8px 16px; /* Adjust padding */
+    border-radius: 2px;
+}
+
+.btn2 {
+    color: white;
+    background-color: rgb(39, 83, 170);
+    border: 2px solid rgb(39, 83, 170); /* Update border */
+    padding: 8px 16px; /* Adjust padding */
+    border-radius: 2px;
+}
+
+.hire {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: auto; /* Push the 'Hire Talent' text to the right */
+    margin-right: 20px; /* Add margin to the right */
+}
+
+@media screen and (max-width: 768px){
+    .nav1{
+        display:none
+    }
+}
+.spanelem{
+    justify-content: center;
+    text-align: center;
+}
+ 
+ .login {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff; 
+  border: 1px solid #fff; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.login .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+}
+
+
+/* Tab container */
+.spanelem {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+ .authtab {
+  cursor: pointer;
+  font-size: 1rem; 
+  color: #4a5568;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.authtab.active {
+  background-color: #e2e8f0; 
+}
+
+.py-6 {
+  text-align: center;
+  top:30px;
+  align-items: center;
+}
+
+ .py-6 p {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background-color: #355c9b; 
+  color: #ffffff; 
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top:20px;
+  transition: background-color 0.3s ease;
+}
+.py-6 .log{
+  font-size: 20px;
+}
+.py-6 p:hover {
+  background-color: #6b95d7;
+  color:white;
+}
+
+ .py-4 svg {
+  width: 3rem; 
+  height: 3rem;
+   align-items: center;
+  justify-content: center;
+   margin-top:10px;
+   padding:5px 10px;
+}
+
+ .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+ .border-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #cbd5e0; 
+}
+
+ .or-text {
+  margin: 0 1rem; /* Adjust spacing as needed */
+  color: #4a5568; /* Adjust color as needed */
+}
+
+ .input-container {
+  margin-top: 1.5rem;
+}
+
+ .label {
+  display: block;
+  color: #4a5568; /* Adjust color as needed */
+  font-size: 0.875rem; /* Adjust font size as needed */
+  font-weight: 500; /* Adjust font weight as needed */
+  margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+
+ .input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e0; /* Adjust border color as needed */
+  border-radius: 0.25rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4299e1;   
+}
+
+ .forget-password {
+  display: block;
+  color: #4299e1; /* Adjust color as needed */
+  font-size: 0.75rem; /* Adjust font size as needed */
+  text-decoration: none;
+}
+
+.forget-password:hover {
+  text-decoration: underline;
+}
+.login-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #4299e1; /* Adjust background color as needed */
+  color: #f8f7f9; /* Adjust text color as needed */
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #2c5282; 
+}
+.text-sm{
+  color:rgb(9, 72, 106);
+  cursor: pointer;
+  font-size:10px
+}
+.profile-dropdown {
+  position: absolute;
+  top: 70px; /* Adjust this value to position the dropdown below the navbar */
+  left: 30%; /* Align dropdown with the center */
+  transform: translateX(-50%); /* Center the dropdown horizontally */
+  background-color: #fff;
+  min-width: 420px; /* Adjust width as needed */
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: flex; /* Ensure flex layout */
+  align-items: center; /* Align items vertically */
+}
+
+.left-section,
+.right-section {
+  padding: 10px; /* Add padding */
+  flex: 1; /* Occupy remaining space */
+}
+
+.left-section p,
+.right-section p {
+  margin:0; /* Add margin between items */
+  cursor: pointer;
+   font-size: 20px;
+}
+
+.left-section p:hover,
+.right-section p:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
+.vertical-line {
+  border-left: 1px solid #1a1919; /* Add vertical line */
+  height: 250px; 
+  /* Make the line stretch the full height */
+  padding:10px 20px;
+}
+
+.right-section p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last item in the right section */
+}
